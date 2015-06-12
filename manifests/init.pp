@@ -8,6 +8,7 @@
 #   Explanation of what this parameter affects and what it defaults to.
 #
 class dropbox (
+  $install_path = "/Users/${::boxen_user}/Applications/Dropbox.app"
 ) {
   package { 'dropbox-halyard':
     provider    => 'brewcask',
@@ -15,6 +16,11 @@ class dropbox (
   } ->
   osx_login_item { 'dropbox-halyard':
     hidden => true,
-    path   => "/Users/${::boxen_user}/Applications/Dropbox.app"
+    path   => $install_path
+  } ~>
+  exec { "launch dropbox":
+    command     => "/usr/bin/open ${install_path}",
+    refreshonly => true,
   }
+
 }
