@@ -12,5 +12,9 @@ class dropbox (
   package { 'dropbox-halyard':
     provider    => 'brewcask',
     require     => Homebrew::Tap['halyard/casks']
+  } ->
+  osx_login_item { 'dropbox-halyard':
+    hidden => true,
+    path   => "/Users/${::boxen_user}/Applications/Dropbox.app"
   }
 }
