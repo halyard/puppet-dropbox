@@ -14,7 +14,7 @@ class dropbox (
     provider    => 'brewcask',
     require     => Homebrew::Tap['halyard/casks']
   } ->
-  osx_login_item { 'dropbox-halyard':
+  osx_login_item { 'Dropbox':
     hidden => true,
     path   => $install_path
   } ~>
@@ -22,5 +22,4 @@ class dropbox (
     command     => "/usr/bin/open ${install_path}",
     refreshonly => true,
   }
-
 }
