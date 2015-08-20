@@ -8,7 +8,8 @@
 #   Explanation of what this parameter affects and what it defaults to.
 #
 class dropbox (
-  $install_path = "/Users/${::boxen_user}/Applications/Dropbox.app"
+  $install_path = "/Users/${::boxen_user}/Applications/Dropbox.app",
+  $dropbox_root = "/Users/${::boxen_user}/Dropbox"
 ) {
   package { 'dropbox-halyard':
     provider    => 'brewcask',
