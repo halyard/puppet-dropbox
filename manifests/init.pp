@@ -1,11 +1,8 @@
 # == Class: dropbox
 #
-# Full description of class dropbox here.
+# Install and configure Dropbox
 #
 # === Parameters
-#
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
 #
 class dropbox (
   $install_path = "/Users/${::boxen_user}/Applications/Dropbox.app",

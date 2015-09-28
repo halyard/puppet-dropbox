@@ -1,17 +1,16 @@
 dropbox
 ==============
 
-[![Module Version](https://img.shields.io/puppetforge/v/akerl/dropbox.svg)](https://forge.puppetlabs.com/akerl/dropbox)
-[![Module Score](https://img.shields.io/puppetforge/f/akerl/dropbox.svg)](https://forge.puppetlabs.com/akerl/dropbox/scores)
-[![Dependency Status](https://img.shields.io/gemnasium/akerl/dropbox.svg)](https://gemnasium.com/akerl/dropbox)
-[![Build Status](https://img.shields.io/travis/akerl/dropbox.svg)](https://travis-ci.org/akerl/dropbox)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
+[![Build Status](https://img.shields.io/circleci/project/halyard/puppet-dropbox.svg)](https://circleci.com/gh/halyard/puppet-dropbox)
 
-Short description
+Install and configure Dropbox
 
 ## Usage
 
-## Setup
+```puppet
+include dropbox
+```
 
 ## License
 
