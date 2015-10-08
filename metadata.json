@@ -1,0 +1,22 @@
+{
+  "name": "halyard-dropbox",
+  "version": "0.1.0",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure dropbox via Boxen",
+  "source": "https://github.com/halyard/puppet-dropbox",
+  "project_page": "https://github.com/halyard/puppet-dropbox",
+  "issues_url": "https://github.com/halyard/puppet-dropbox/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemmajrelease": [
+        "14",
+        "15"
+      ]
+    }
+  ]
+}
